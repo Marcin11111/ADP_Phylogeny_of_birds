@@ -1,4 +1,4 @@
 Phylogeny of birds
 
 Members
-Marcin KLimko
+Marcin Klimko, Elżbieta Karpińska
