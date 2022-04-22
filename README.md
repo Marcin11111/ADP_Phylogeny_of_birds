@@ -1,8 +1,7 @@
-Phylogeny of birds
+## POB
 
-Members
-Marcin Klimko, Elżbieta Karpińska
+### Members: 
+* Marcin Klimko, Elżbieta Karpińska
 
-
-
-gggggg
+### Description
+Phylogeny of choosen species birds.
