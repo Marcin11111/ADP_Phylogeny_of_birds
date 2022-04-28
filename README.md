@@ -1,7 +1,7 @@
 ## POB
 
 ### Members: 
-* Marcin Klimko, Elżbieta Karpińska
+* Marcin Klimko, Elżbieta Karpińska, Michal Maruchin
 
 ### Description
 Phylogeny of choosen species birds.
