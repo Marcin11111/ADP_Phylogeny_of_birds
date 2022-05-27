@@ -12,7 +12,7 @@ The program allows to make a phylogeny and aminoacid content analysis for choose
 More informations in documentation.
 
 ### Requirements
-* Unix system like Ubuntu or Ubuntu fow Windows 10 emulator.
+* Unix system like Ubuntu or Ubuntu for Windows 10 emulator.
 
 * Mmseq2 installed (optional) (https://github.com/soedinglab/MMseqs2)
 * Igtree installed (optional) (http://www.iqtree.org/)
