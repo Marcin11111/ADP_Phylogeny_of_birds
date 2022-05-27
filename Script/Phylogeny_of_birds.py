@@ -159,16 +159,10 @@ def download_from_list(names_list):
     return ready
 
 
-# In[10]:
 
 
-#names_list=[
-#    'Amazona guildingii',
-#    'Aphelocoma coerulescens', 
-#    'Bubo bubo']
 
-
-# In[55]:
+# Automatically make phylogeny tree
 
 def auto_rep(list_of_names,path_to_save):
     merger(list_of_names,path_to_save)
@@ -207,7 +201,7 @@ def auto_rep(list_of_names,path_to_save):
             subprocess.run(['rm *.phypob'])
             subprocess.run(['rm *.cluster'])
 
-
+# Merge seq files to one file
 def merger(list_of_names,path_to_save):
     if not os.path.exists(path_to_save):
         os.makedirs(path_to_save)
@@ -224,10 +218,10 @@ def merger(list_of_names,path_to_save):
         f.close()
 
 
-# In[73]:
 
 
-#klastry z powtorkami
+
+#Clusters with paralogs
 def clusters_with_rep(file_path):
     with open(file_path, 'r') as file:
         clusters_fasta = {}
@@ -240,7 +234,7 @@ def clusters_with_rep(file_path):
                     'org': line[line.index('OS=') + 3:line.index('OX=') - 1].replace(' ', '_'),
                     'seq': file.readline()[:-1]}})
 
-    #print('liczba klastrow ', len(clusters_fasta))
+  
 
     for c in clusters_fasta:
         if len(clusters_fasta[c]) > 2:
@@ -253,10 +247,10 @@ def clusters_with_rep(file_path):
 
 
 
-# In[88]:
 
 
-#klastry bez powtorek
+
+#Clusters without paralogs
 def clusters_without_rep(file_path):
     print('Type your minimum species number per cluster')
     minimum_number = int(input())
@@ -271,7 +265,7 @@ def clusters_without_rep(file_path):
                     line.split('|')[1]: {'org': line[line.index('OS=') + 3:line.index('OX=') - 1].replace(' ', '_'),
                         'seq': file.readline()[:-1]}})
 
-    #print('liczba klastrow ', len(clusters_fasta))
+    
 
     for c in clusters_fasta:
         if len(clusters_fasta[c]) >= minimum_number:
@@ -292,7 +286,7 @@ def clusters_without_rep(file_path):
 
 
 
-# In[ ]:
+
 
 
 ##bootstrapping
@@ -318,7 +312,7 @@ def bootstrapping(input_file):
     f2.close()
 
 
-# In[ ]:
+
 
 
 #MC tree
@@ -340,7 +334,7 @@ def mc(file_path):
     fig.savefig('MC_consensus_tree.png')
 
 
-# In[15]:
+
 
 
 def average_protein_length(file):
