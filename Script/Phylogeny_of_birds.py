@@ -281,7 +281,7 @@ def clusters_without_rep(file_path):
                 with open(f'{c}.cluster', 'w') as file:
                     for k in org_list:
                         file.write('>' + org_list[k][0] + '|' + org_list[k][1] + '\n' + org_list[k][2] + '\n')
-            #print(f'w klastrze {c} jest {len(org_list)} sekwencji')
+            
 
 
 
