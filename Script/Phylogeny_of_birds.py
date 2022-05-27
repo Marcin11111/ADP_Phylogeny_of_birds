@@ -186,7 +186,7 @@ def auto_rep(list_of_names,path_to_save):
                             'org': line[line.index('OS=') + 3:line.index('OX=') - 1].replace(' ', '_'),
                             'seq': file.readline()[:-1]}})
 
-            #print('liczba klastrow ', len(clusters_fasta))
+            
 
             for c in clusters_fasta:
                 if len(clusters_fasta[c]) > 2:
