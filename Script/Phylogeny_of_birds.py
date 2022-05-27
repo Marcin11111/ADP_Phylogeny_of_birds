@@ -329,7 +329,7 @@ def mc(file_path):
 
     fig = plt.figure(figsize=(20,30))
     axes = fig.add_subplot(1, 1, 1)
-    plt.title('Drzewo MC', size = 20)
+    plt.title('MC consensus tree', size = 20)
     Phylo.draw(mt1,  axes = axes)
     fig.savefig('MC_consensus_tree.png')
 
